@@ -1,0 +1,646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		002F9E1C26708E5C00454DA4 /* HeartarteMonitorAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002F9E1B26708E5C00454DA4 /* HeartarteMonitorAppApp.swift */; };
+		002F9E1E26708E5C00454DA4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002F9E1D26708E5C00454DA4 /* ContentView.swift */; };
+		002F9E2026708E5C00454DA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 002F9E1F26708E5C00454DA4 /* Assets.xcassets */; };
+		002F9E2326708E5C00454DA4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 002F9E2226708E5C00454DA4 /* Preview Assets.xcassets */; };
+		002F9E2D2670919D00454DA4 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002F9E2C2670919D00454DA4 /* ModelData.swift */; };
+		002F9E2F267092C800454DA4 /* IOSDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002F9E2E267092C800454DA4 /* IOSDataHandler.swift */; };
+		002F9E352670941400454DA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 002F9E342670941400454DA4 /* Assets.xcassets */; };
+		002F9E3C2670941500454DA4 /* HearRateMonitor Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 002F9E3B2670941500454DA4 /* HearRateMonitor Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		002F9E432670941500454DA4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002F9E422670941500454DA4 /* ContentView.swift */; };
+		002F9E452670941500454DA4 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002F9E442670941500454DA4 /* NotificationController.swift */; };
+		002F9E472670941500454DA4 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002F9E462670941500454DA4 /* NotificationView.swift */; };
+		002F9E492670941500454DA4 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002F9E482670941500454DA4 /* ComplicationController.swift */; };
+		002F9E4B2670941500454DA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 002F9E4A2670941500454DA4 /* Assets.xcassets */; };
+		002F9E4E2670941500454DA4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 002F9E4D2670941500454DA4 /* Preview Assets.xcassets */; };
+		002F9E532670941500454DA4 /* HearRateMonitor.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 002F9E322670941300454DA4 /* HearRateMonitor.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		002F9E5C2670945E00454DA4 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002F9E2C2670919D00454DA4 /* ModelData.swift */; };
+		002F9E5E267094FA00454DA4 /* WatchDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002F9E5D267094FA00454DA4 /* WatchDataHandler.swift */; };
+		002F9E60267096A000454DA4 /* HeartarteMonitorAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002F9E1B26708E5C00454DA4 /* HeartarteMonitorAppApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		002F9E3D2670941500454DA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 002F9E1026708E5C00454DA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 002F9E3A2670941500454DA4;
+			remoteInfo = "HearRateMonitor Extension";
+		};
+		002F9E512670941500454DA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 002F9E1026708E5C00454DA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 002F9E312670941300454DA4;
+			remoteInfo = HearRateMonitor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		002F9E572670941500454DA4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				002F9E3C2670941500454DA4 /* HearRateMonitor Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		002F9E5B2670941500454DA4 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				002F9E532670941500454DA4 /* HearRateMonitor.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		002F9E1826708E5C00454DA4 /* HeartarteMonitorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartarteMonitorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		002F9E1B26708E5C00454DA4 /* HeartarteMonitorAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartarteMonitorAppApp.swift; sourceTree = "<group>"; };
+		002F9E1D26708E5C00454DA4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		002F9E1F26708E5C00454DA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		002F9E2226708E5C00454DA4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		002F9E2426708E5C00454DA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		002F9E2C2670919D00454DA4 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		002F9E2E267092C800454DA4 /* IOSDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSDataHandler.swift; sourceTree = "<group>"; };
+		002F9E322670941300454DA4 /* HearRateMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HearRateMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		002F9E342670941400454DA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		002F9E362670941400454DA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		002F9E3B2670941500454DA4 /* HearRateMonitor Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HearRateMonitor Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		002F9E422670941500454DA4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		002F9E442670941500454DA4 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		002F9E462670941500454DA4 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		002F9E482670941500454DA4 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		002F9E4A2670941500454DA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		002F9E4D2670941500454DA4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		002F9E4F2670941500454DA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		002F9E502670941500454DA4 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		002F9E5D267094FA00454DA4 /* WatchDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchDataHandler.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		002F9E1526708E5C00454DA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		002F9E382670941500454DA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		002F9E0F26708E5C00454DA4 = {
+			isa = PBXGroup;
+			children = (
+				002F9E1A26708E5C00454DA4 /* HeartarteMonitorApp */,
+				002F9E332670941300454DA4 /* HearRateMonitor */,
+				002F9E3F2670941500454DA4 /* HearRateMonitor Extension */,
+				002F9E1926708E5C00454DA4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		002F9E1926708E5C00454DA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				002F9E1826708E5C00454DA4 /* HeartarteMonitorApp.app */,
+				002F9E322670941300454DA4 /* HearRateMonitor.app */,
+				002F9E3B2670941500454DA4 /* HearRateMonitor Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		002F9E1A26708E5C00454DA4 /* HeartarteMonitorApp */ = {
+			isa = PBXGroup;
+			children = (
+				002F9E1B26708E5C00454DA4 /* HeartarteMonitorAppApp.swift */,
+				002F9E1D26708E5C00454DA4 /* ContentView.swift */,
+				002F9E1F26708E5C00454DA4 /* Assets.xcassets */,
+				002F9E2426708E5C00454DA4 /* Info.plist */,
+				002F9E2126708E5C00454DA4 /* Preview Content */,
+				002F9E2C2670919D00454DA4 /* ModelData.swift */,
+				002F9E2E267092C800454DA4 /* IOSDataHandler.swift */,
+			);
+			path = HeartarteMonitorApp;
+			sourceTree = "<group>";
+		};
+		002F9E2126708E5C00454DA4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				002F9E2226708E5C00454DA4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		002F9E332670941300454DA4 /* HearRateMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				002F9E342670941400454DA4 /* Assets.xcassets */,
+				002F9E362670941400454DA4 /* Info.plist */,
+			);
+			path = HearRateMonitor;
+			sourceTree = "<group>";
+		};
+		002F9E3F2670941500454DA4 /* HearRateMonitor Extension */ = {
+			isa = PBXGroup;
+			children = (
+				002F9E422670941500454DA4 /* ContentView.swift */,
+				002F9E442670941500454DA4 /* NotificationController.swift */,
+				002F9E462670941500454DA4 /* NotificationView.swift */,
+				002F9E482670941500454DA4 /* ComplicationController.swift */,
+				002F9E4A2670941500454DA4 /* Assets.xcassets */,
+				002F9E4F2670941500454DA4 /* Info.plist */,
+				002F9E502670941500454DA4 /* PushNotificationPayload.apns */,
+				002F9E4C2670941500454DA4 /* Preview Content */,
+				002F9E5D267094FA00454DA4 /* WatchDataHandler.swift */,
+			);
+			path = "HearRateMonitor Extension";
+			sourceTree = "<group>";
+		};
+		002F9E4C2670941500454DA4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				002F9E4D2670941500454DA4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		002F9E1726708E5C00454DA4 /* HeartarteMonitorApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 002F9E2726708E5C00454DA4 /* Build configuration list for PBXNativeTarget "HeartarteMonitorApp" */;
+			buildPhases = (
+				002F9E1426708E5C00454DA4 /* Sources */,
+				002F9E1526708E5C00454DA4 /* Frameworks */,
+				002F9E1626708E5C00454DA4 /* Resources */,
+				002F9E5B2670941500454DA4 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				002F9E522670941500454DA4 /* PBXTargetDependency */,
+			);
+			name = HeartarteMonitorApp;
+			productName = HeartarteMonitorApp;
+			productReference = 002F9E1826708E5C00454DA4 /* HeartarteMonitorApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		002F9E312670941300454DA4 /* HearRateMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 002F9E582670941500454DA4 /* Build configuration list for PBXNativeTarget "HearRateMonitor" */;
+			buildPhases = (
+				002F9E302670941300454DA4 /* Resources */,
+				002F9E572670941500454DA4 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				002F9E3E2670941500454DA4 /* PBXTargetDependency */,
+			);
+			name = HearRateMonitor;
+			productName = HearRateMonitor;
+			productReference = 002F9E322670941300454DA4 /* HearRateMonitor.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		002F9E3A2670941500454DA4 /* HearRateMonitor Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 002F9E542670941500454DA4 /* Build configuration list for PBXNativeTarget "HearRateMonitor Extension" */;
+			buildPhases = (
+				002F9E372670941500454DA4 /* Sources */,
+				002F9E382670941500454DA4 /* Frameworks */,
+				002F9E392670941500454DA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HearRateMonitor Extension";
+			productName = "HearRateMonitor Extension";
+			productReference = 002F9E3B2670941500454DA4 /* HearRateMonitor Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		002F9E1026708E5C00454DA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					002F9E1726708E5C00454DA4 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					002F9E312670941300454DA4 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					002F9E3A2670941500454DA4 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 002F9E1326708E5C00454DA4 /* Build configuration list for PBXProject "HeartarteMonitorApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 002F9E0F26708E5C00454DA4;
+			productRefGroup = 002F9E1926708E5C00454DA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				002F9E1726708E5C00454DA4 /* HeartarteMonitorApp */,
+				002F9E312670941300454DA4 /* HearRateMonitor */,
+				002F9E3A2670941500454DA4 /* HearRateMonitor Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		002F9E1626708E5C00454DA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002F9E2326708E5C00454DA4 /* Preview Assets.xcassets in Resources */,
+				002F9E2026708E5C00454DA4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		002F9E302670941300454DA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002F9E352670941400454DA4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		002F9E392670941500454DA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002F9E4E2670941500454DA4 /* Preview Assets.xcassets in Resources */,
+				002F9E4B2670941500454DA4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		002F9E1426708E5C00454DA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002F9E2F267092C800454DA4 /* IOSDataHandler.swift in Sources */,
+				002F9E1E26708E5C00454DA4 /* ContentView.swift in Sources */,
+				002F9E1C26708E5C00454DA4 /* HeartarteMonitorAppApp.swift in Sources */,
+				002F9E2D2670919D00454DA4 /* ModelData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		002F9E372670941500454DA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002F9E60267096A000454DA4 /* HeartarteMonitorAppApp.swift in Sources */,
+				002F9E452670941500454DA4 /* NotificationController.swift in Sources */,
+				002F9E432670941500454DA4 /* ContentView.swift in Sources */,
+				002F9E492670941500454DA4 /* ComplicationController.swift in Sources */,
+				002F9E5E267094FA00454DA4 /* WatchDataHandler.swift in Sources */,
+				002F9E472670941500454DA4 /* NotificationView.swift in Sources */,
+				002F9E5C2670945E00454DA4 /* ModelData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		002F9E3E2670941500454DA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 002F9E3A2670941500454DA4 /* HearRateMonitor Extension */;
+			targetProxy = 002F9E3D2670941500454DA4 /* PBXContainerItemProxy */;
+		};
+		002F9E522670941500454DA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 002F9E312670941300454DA4 /* HearRateMonitor */;
+			targetProxy = 002F9E512670941500454DA4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		002F9E2526708E5C00454DA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		002F9E2626708E5C00454DA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		002F9E2826708E5C00454DA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"HeartarteMonitorApp/Preview Content\"";
+				DEVELOPMENT_TEAM = N36247SD7Z;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = HeartarteMonitorApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ju.hyang.HeartarteMonitorApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		002F9E2926708E5C00454DA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"HeartarteMonitorApp/Preview Content\"";
+				DEVELOPMENT_TEAM = N36247SD7Z;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = HeartarteMonitorApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ju.hyang.HeartarteMonitorApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		002F9E552670941500454DA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"HearRateMonitor Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = N36247SD7Z;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "HearRateMonitor Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ju.hyang.HeartarteMonitorApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		002F9E562670941500454DA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"HearRateMonitor Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = N36247SD7Z;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "HearRateMonitor Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ju.hyang.HeartarteMonitorApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		002F9E592670941500454DA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N36247SD7Z;
+				IBSC_MODULE = HearRateMonitor_Extension;
+				INFOPLIST_FILE = HearRateMonitor/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = ju.hyang.HeartarteMonitorApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		002F9E5A2670941500454DA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N36247SD7Z;
+				IBSC_MODULE = HearRateMonitor_Extension;
+				INFOPLIST_FILE = HearRateMonitor/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = ju.hyang.HeartarteMonitorApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		002F9E1326708E5C00454DA4 /* Build configuration list for PBXProject "HeartarteMonitorApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				002F9E2526708E5C00454DA4 /* Debug */,
+				002F9E2626708E5C00454DA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		002F9E2726708E5C00454DA4 /* Build configuration list for PBXNativeTarget "HeartarteMonitorApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				002F9E2826708E5C00454DA4 /* Debug */,
+				002F9E2926708E5C00454DA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		002F9E542670941500454DA4 /* Build configuration list for PBXNativeTarget "HearRateMonitor Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				002F9E552670941500454DA4 /* Debug */,
+				002F9E562670941500454DA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		002F9E582670941500454DA4 /* Build configuration list for PBXNativeTarget "HearRateMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				002F9E592670941500454DA4 /* Debug */,
+				002F9E5A2670941500454DA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 002F9E1026708E5C00454DA4 /* Project object */;
+}
