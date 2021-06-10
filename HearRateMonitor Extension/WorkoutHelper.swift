@@ -27,7 +27,12 @@ class WorkoutHelper : NSObject {
     func authorizeHealthKit() {
         if HKHealthStore.isHealthDataAvailable() {
             let healthKitTypesToRead = Set([
-                HKSampleType.quantityType(forIdentifier: .heartRate)!
+                HKSampleType.quantityType(forIdentifier: .heartRate)!,
+                HKSampleType.workoutType()
+            ])
+            let healthKitTypesToWrite = Set([
+                HKObjectType.quantityType(forIdentifier: .heartRate)!,
+                HKObjectType.workoutType()
             ])
             
             let authorizationStatus = healthStore.authorizationStatus(for: HKSampleType.workoutType())
@@ -39,13 +44,13 @@ class WorkoutHelper : NSObject {
                 
             case .sharingDenied: print("sharing denied")
                 
-                healthStore.requestAuthorization(toShare: nil, read: healthKitTypesToRead) { (success, error) in
+                healthStore.requestAuthorization(toShare: healthKitTypesToWrite, read: healthKitTypesToRead) { (success, error) in
                     print("Successful HealthKit Authorization from Watch's extension Delegate")
                 }
                 
             default: print("not determined")
                 
-                healthStore.requestAuthorization(toShare: nil, read: healthKitTypesToRead) { (success, error) in
+                healthStore.requestAuthorization(toShare: healthKitTypesToWrite, read: healthKitTypesToRead) { (success, error) in
                     print("Successful HealthKit Authorization from Watch's extension Delegate")
                 }
             }

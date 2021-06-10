@@ -21,9 +21,9 @@ class WatchDataHandler : NSObject {
     }
     
     func sendAction() {
-        self.modelData.watchDataText = "Send Action"
         let data : [String: Any] = ["watch" : "Data from Watch" as Any ]
         session.transferUserInfo(data)
+        self.modelData.watchDataText = "Send Action"
     }
     
     func sendValue (value : Any) {

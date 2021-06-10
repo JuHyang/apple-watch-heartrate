@@ -41,6 +41,7 @@ class IOSDataHandler : NSObject {
 
 extension IOSDataHandler : WCSessionDelegate {
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        print (activationState)
     }
 
     func session(_ session: WCSession, didReceiveUserInfo userInfo: [String : Any] = [:]) {
@@ -48,10 +49,12 @@ extension IOSDataHandler : WCSessionDelegate {
         DispatchQueue.main.async {
             if let value = userInfo["watch"] as? String {
                 self.modelData.iosDataText = value
+                return
             }
             
             if let value = userInfo["heartRate"] as? String {
                 self.modelData.iosDataText = value
+                return
             }
         }
     }
