@@ -49,6 +49,10 @@ extension IOSDataHandler : WCSessionDelegate {
             if let value = userInfo["watch"] as? String {
                 self.modelData.iosDataText = value
             }
+            
+            if let value = userInfo["heartRate"] as? String {
+                self.modelData.iosDataText = value
+            }
         }
     }
 

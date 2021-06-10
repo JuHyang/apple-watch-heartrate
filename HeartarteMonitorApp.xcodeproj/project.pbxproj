@@ -25,6 +25,8 @@
 		002F9E5C2670945E00454DA4 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002F9E2C2670919D00454DA4 /* ModelData.swift */; };
 		002F9E5E267094FA00454DA4 /* WatchDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002F9E5D267094FA00454DA4 /* WatchDataHandler.swift */; };
 		002F9E60267096A000454DA4 /* HeartarteMonitorAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002F9E1B26708E5C00454DA4 /* HeartarteMonitorAppApp.swift */; };
+		002F9E642670A6C200454DA4 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002F9E632670A6C200454DA4 /* HealthKit.framework */; };
+		002F9E662670A6EA00454DA4 /* WorkoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002F9E652670A6EA00454DA4 /* WorkoutHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,9 @@
 		002F9E4F2670941500454DA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		002F9E502670941500454DA4 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		002F9E5D267094FA00454DA4 /* WatchDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchDataHandler.swift; sourceTree = "<group>"; };
+		002F9E612670A6C200454DA4 /* HearRateMonitor Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "HearRateMonitor Extension.entitlements"; sourceTree = "<group>"; };
+		002F9E632670A6C200454DA4 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.4.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		002F9E652670A6EA00454DA4 /* WorkoutHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				002F9E642670A6C200454DA4 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +124,7 @@
 				002F9E332670941300454DA4 /* HearRateMonitor */,
 				002F9E3F2670941500454DA4 /* HearRateMonitor Extension */,
 				002F9E1926708E5C00454DA4 /* Products */,
+				002F9E622670A6C200454DA4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -165,6 +172,7 @@
 		002F9E3F2670941500454DA4 /* HearRateMonitor Extension */ = {
 			isa = PBXGroup;
 			children = (
+				002F9E612670A6C200454DA4 /* HearRateMonitor Extension.entitlements */,
 				002F9E422670941500454DA4 /* ContentView.swift */,
 				002F9E442670941500454DA4 /* NotificationController.swift */,
 				002F9E462670941500454DA4 /* NotificationView.swift */,
@@ -174,6 +182,7 @@
 				002F9E502670941500454DA4 /* PushNotificationPayload.apns */,
 				002F9E4C2670941500454DA4 /* Preview Content */,
 				002F9E5D267094FA00454DA4 /* WatchDataHandler.swift */,
+				002F9E652670A6EA00454DA4 /* WorkoutHelper.swift */,
 			);
 			path = "HearRateMonitor Extension";
 			sourceTree = "<group>";
@@ -184,6 +193,14 @@
 				002F9E4D2670941500454DA4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		002F9E622670A6C200454DA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				002F9E632670A6C200454DA4 /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				002F9E60267096A000454DA4 /* HeartarteMonitorAppApp.swift in Sources */,
+				002F9E662670A6EA00454DA4 /* WorkoutHelper.swift in Sources */,
 				002F9E452670941500454DA4 /* NotificationController.swift in Sources */,
 				002F9E432670941500454DA4 /* ContentView.swift in Sources */,
 				002F9E492670941500454DA4 /* ComplicationController.swift in Sources */,
@@ -517,6 +535,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "HearRateMonitor Extension/HearRateMonitor Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"HearRateMonitor Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = N36247SD7Z;
@@ -541,6 +560,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "HearRateMonitor Extension/HearRateMonitor Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"HearRateMonitor Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = N36247SD7Z;

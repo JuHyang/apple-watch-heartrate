@@ -13,6 +13,8 @@ class WatchDataHandler : NSObject {
     let modelData = ModelData.shared
     let session = WCSession.default
     
+    static let shared = WatchDataHandler()
+    
     override init() {
         super.init()
         configureWatchKitSession()
@@ -21,6 +23,11 @@ class WatchDataHandler : NSObject {
     func sendAction() {
         self.modelData.watchDataText = "Send Action"
         let data : [String: Any] = ["watch" : "Data from Watch" as Any ]
+        session.transferUserInfo(data)
+    }
+    
+    func sendValue (value : Any) {
+        let data : [String : Any] = ["heartRate" : value]
         session.transferUserInfo(data)
     }
     
@@ -45,6 +52,5 @@ extension WatchDataHandler : WCSessionDelegate {
                 self.modelData.watchDataText = value
             }
         }
-    }
-    
+    }    
 }

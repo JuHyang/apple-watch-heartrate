@@ -10,23 +10,39 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var modelData : ModelData
     
-    let dataHandler = WatchDataHandler()
+    let dataHandler = WatchDataHandler.shared
+    let workoutHelper = WorkoutHelper.shared
     
     var body: some View {
-        VStack {
-            Text(modelData.watchDataText)
-            Button(action: {
-                dataHandler.sendAction()
-            }) {
-                Text("Send To Watch")
-            }
-            Button(action: {
-                dataHandler.reset()
-        }) {
-                Text("Reset")
+        ScrollView {
+            VStack {
+                Text(modelData.watchDataText)
+                Button(action: {
+                    dataHandler.sendAction()
+                }) {
+                    Text("Send To Watch")
+                }
+                .padding()
+                Button(action: {
+                    dataHandler.reset()
+                }) {
+                    Text("Reset")
+                }
+                .padding()
+                Button(action: {
+                    workoutHelper.startWorkoutSession()
+                }) {
+                    Text("Start Workout")
+                }
+                .padding()
+                Button(action: {
+                    workoutHelper.stopWorkoutSession()
+                }) {
+                    Text("End Wokrout")
+                }
+                .padding()
             }
         }
-        
     }
 }
 
